@@ -3,8 +3,12 @@ from features.support_queue import SupportQueue
 
 
 class SupportQueueTest(unittest.TestCase):
+    """
+    Unit tests for the SupportQueue class.
+    The tests run sequentially, and the state of the shared SupportQueue instance persists across tests.
+    """
 
-    queue = SupportQueue()
+    queue = SupportQueue()  # Instance of SupportQueue
 
     # -----------------------------------------------------------------------------
 

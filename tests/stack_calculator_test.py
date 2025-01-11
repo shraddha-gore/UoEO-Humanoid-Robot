@@ -3,8 +3,12 @@ from features.stack_calculator import StackCalculator
 
 
 class StackCalculatorTest(unittest.TestCase):
+    """
+    Unit tests for the StackCalculator class.
+    The tests run sequentially, and the state of the shared StackCalculator instance persists across tests.
+    """
 
-    calc = StackCalculator()
+    calc = StackCalculator()  # Instance of StackCalculator
 
     # -----------------------------------------------------------------------------
 

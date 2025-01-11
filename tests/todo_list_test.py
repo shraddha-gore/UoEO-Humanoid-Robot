@@ -3,8 +3,12 @@ from features.todo_list import ToDoList
 
 
 class ToDoListTest(unittest.TestCase):
+    """
+    Unit tests for the ToDoList class.
+    The tests run sequentially, and the state of the shared ToDoList instance persists across tests.
+    """
 
-    todo = ToDoList()
+    todo = ToDoList()  # Instance of ToDoList
 
     # -----------------------------------------------------------------------------
 
