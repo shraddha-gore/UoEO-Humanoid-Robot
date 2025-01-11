@@ -58,7 +58,7 @@ class ToDoList(Feature):
                 return
 
             self._tasks.remove(task)
-            print("Task '{task}' removed.")
+            print(f"Task '{task}' removed.")
         except Exception as e:
             print(f"Error: {e}")
 

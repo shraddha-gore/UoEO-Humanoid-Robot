@@ -34,7 +34,7 @@ class SupportQueue(Feature):
                 return
 
             self._queue.append(ticket)
-            return f"Ticket '{ticket}' added."
+            print(f"Ticket '{ticket}' added.")
         except Exception as e:
             print(f"Error: {e}")
 
