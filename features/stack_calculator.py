@@ -32,7 +32,7 @@ class StackCalculator(Feature):
     def add(self, number):
         """Add a number to the current value and update the stack."""
         try:
-            number = float(number)
+            number = round(float(number), 2)
             current_value = self.get_current_value()
 
             self._stack.append(current_value)
@@ -48,7 +48,7 @@ class StackCalculator(Feature):
     def subtract(self, number):
         """Subtract a number from the current value and update the stack."""
         try:
-            number = float(number)
+            number = round(float(number), 2)
             current_value = self.get_current_value()
 
             self._stack.append(current_value)
@@ -64,7 +64,7 @@ class StackCalculator(Feature):
     def multiply(self, number):
         """Multiply the current value by a number and update the stack."""
         try:
-            number = float(number)
+            number = round(float(number), 2)
             current_value = self.get_current_value()
 
             self._stack.append(current_value)
@@ -80,7 +80,7 @@ class StackCalculator(Feature):
     def divide(self, number):
         """Divide the current value by a number and update the stack."""
         try:
-            number = float(number)
+            number = round(float(number), 2)
 
             if number == 0:
                 raise ZeroDivisionError("Cannot divide by 0.")
@@ -99,7 +99,7 @@ class StackCalculator(Feature):
     def mod(self, number):
         """Calculate the remainder of the current value divided by a number and update the stack."""
         try:
-            number = float(number)
+            number = round(float(number), 2)
 
             if number == 0:
                 raise ZeroDivisionError("Cannot mod by 0.")
